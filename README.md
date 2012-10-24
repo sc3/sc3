@@ -1,12 +1,16 @@
 # What is Supreme Chi-Town Coding Crew?
 
-Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educates a diverse group of Chicagoans in practical software development skills and collaboratively develops useful web applications and sites.
+Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educate a diverse group of Chicagoans in practical software development skills and who collaboratively develop useful web applications and sites.
 
 # Who is Supreme Chi-Town Coding Crew?
 
 * Sabine Ye
 * Jimmie Glover
 * David Eads
+
+# How do I join?
+
+Come to OpenHack at FreeGeek Chicago, every Wednesday night from 6pm-8pm at 3411 W. Diversey. Details available on the [FreeGeek Chicago calendar](http://freegeekchicago.org/calendar).
 
 # Our goals
 
@@ -16,6 +20,7 @@ Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educates a dive
 * We will build web applications that investigate our city.
 * We will build open APIs when our software uses and processes data.
 * We will be governed by consensus by a group of 3 - 10 project maintainers.
+* We will do our best to get people stable, well-paid jobs.
 * We will have a blast.
 
 # Governance
