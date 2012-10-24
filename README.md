@@ -15,13 +15,13 @@ Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educates a dive
 * We will release our software under free software licenses, primarily the GNU GPL version 3.
 * We will build web applications that investigate our city.
 * We will build open APIs when our software uses and processes data.
-* We will be governed by consensus. 
+* We will be governed by consensus by a group of 3 - 10 project maintainers.
 * We will have a blast.
 
 # Governance
 
 * Big decisions such as what projects we'll tackle and licenses we'll use will be made by formal consensus (see below) by everyone with administrative privileges on the SC3 Github account (https://github.com/sc3).
-* For the moment, anyone with commit privileges can give anyone else commit privileges.
+* For the moment, anyone with administrative privileges can give anyone else administrative privileges.
 * Anyone may submit a proposal to be considered using consensus on the Github issue tracker.
 
 # Formal consensus
