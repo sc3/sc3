@@ -1,9 +1,3 @@
-Jimmie and Sabine,
-
-I've been throwing the Supeme Chi-Town Coding Crew name around for a while now and I'd like to formalize it a bit, in the vein of Open City Apps (http://opencityapps.org) but with a community governance structure inspired by our work at FreeGeek Chicago. And I'd like to invite the two of you to become the first official members. 
-
-Are you coming to Hack Night tomorrow? If so, we can talk about it then. For now, some rambling thoughts which I'll turn into a github repo:
-
 # What is Supreme Chi-Town Coding Crew?
 
 Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educates a diverse group of Chicagoans in practical software development skills and collaboratively develops useful web applications and sites.
