@@ -14,8 +14,9 @@ Supreme Chi-Town Coding Crew (SC3) are volunteer developers that educates a dive
 * We will do outreach among people outside of the mainstream IT industry to recruit those excluded because of racial, gender, and generational bias.
 * We will release our software under the GNU General Public license version 3.
 * We will build web applications that investigate our city.
-* We will build open APIs if our software uses and processes data.
+* We will build open APIs when our software uses and processes data.
 * We will be governed by consensus. 
+* We will have a blast.
 
 # Governance
 
