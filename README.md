@@ -47,5 +47,5 @@ Like FreeGeek Chicago early on, we'll use the consensus process to refine and im
 
 * [Hopper VM](https://github.com/sc3/hopper)
 * [Townsquare](https://github.com/sc3/townsquare)
-* [Chicago Birthrates](https://github.com/s3/chicago_birthrates)
-* Cook County Inmate Tracker (proposed)
+* [Chicago Birthrates](https://github.com/sc3/chicago_birthrates)
+* [Cook County Inmate Tracker](https://github.com/sc3/cookcountyjail)
