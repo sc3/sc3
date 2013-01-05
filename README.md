@@ -10,7 +10,7 @@ Supreme Chi-Town Coding Crew (SC3) is a loosely organized team of volunteer soft
 
 # How do I join?
 
-Come to OpenHack at FreeGeek Chicago, every Wednesday night from 6pm-8pm at 3411 W. Diversey. Details available on the [FreeGeek Chicago calendar](http://freegeekchicago.org/calendar).
+Come to OpenHack at FreeGeek Chicago, every Saturday from 1pm-5pm at 3411 W. Diversey. Details available on the [FreeGeek Chicago calendar](http://freegeekchicago.org/calendar).
 
 # Our goals
 
