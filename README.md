@@ -40,7 +40,7 @@ Like FreeGeek Chicago early on, we'll use the consensus process to refine and im
 
 # Contributors
 
-Ryan Asher, Cecilia Calabria, David Eads, Jimmie Glover, Forest Gregg, Sheila Miguez, Wilbero Morales, Sabine Ye
+Ryan Asher, Cecilia Calabria, David Eads, Jimmie Glover, Forest Gregg, Sheila Miguez, Wilberto Morales, Sabine Ye.
 
 # Projects
 
