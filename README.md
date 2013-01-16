@@ -1,6 +1,6 @@
 # What is Supreme Chi-Town Coding Crew?
 
-Supreme Chi-Town Coding Crew (SC3) is a loose team of volunteer software developers. SC3 educates Chicagoans in practical, professional development skills and develops useful web applications.
+Supreme Chi-Town Coding Crew is a loose team of volunteer software developers. SC3 educates Chicagoans in practical, professional development skills and develops useful web applications.
 
 # How do I join?
 
@@ -21,13 +21,13 @@ Come to OpenHack at FreeGeek Chicago, every Saturday from 1pm-5pm at 3411 W. Div
 
 # Governance
 
-Decisions such as what projects we'll tackle and licenses we'll use will be 
+Decisions such as what projects we'll tackle and licenses we'll use loose consensus in face to face meetings will be handled with loose consensus. Anyone may raise an issue for consideration at a meeting or on the Github issue tracker. Participants may:
 
-Consensus means that for a formal decision, decision-makers may:
+* Join in on the proposal.
+* Set aside and let someone else do it.
+* Object and ask for further consideration. 
 
-* Agree: You'd like to get on board.
-* Step aside: You have reservations or simply no resources to contribute to the decision, but you don't oppose it.
-* Veto: You get one veto for life. If you veto a proposal, it will not be considered again. 
+If there is an objection, everyone participating must come to an agreement about how to proceed, or the proposal will be shelved.
 
 # Copyright
 
