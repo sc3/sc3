@@ -38,6 +38,10 @@ The FreeGeek Chicago community and all contributors will share the copyright to 
 
 Like FreeGeek Chicago early on, we'll use the consensus process to refine and improve this document.
 
+# Contributors
+
+Ryan Asher, Cecilia Calabria, David Eads, Jimmie Glover, Forest Gregg, Sheila Miguez, Wilbero Morales, Sabine Ye
+
 # Projects
 
 * [Hopper VM](https://github.com/sc3/hopper) - A lightweight virtual machine for apps development Status: ***Not maintained***
