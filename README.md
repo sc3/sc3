@@ -1,6 +1,6 @@
 # What is Supreme Chi-Town Coding Crew?
 
-Supreme Chi-Town Coding Crew is a loose team of volunteer software developers. SC3 educates Chicagoans in practical, professional development skills and develops useful web applications.
+Supreme Chi-Town Coding Crew is a loose team of volunteers that educate Chicagoans in practical, professional development software development skills by collaboratively developing useful web applications.
 
 # How do I join?
 
@@ -8,15 +8,16 @@ Come to OpenHack at FreeGeek Chicago, every Saturday from 1pm-5pm at 3411 W. Div
 
 # Our goals
 
-* We will be as diverse as Chicago. Everyone is welcome, whatever their skill level.
-* We will do outreach among people outside of the mainstream IT industry to recruit those excluded because of economic, racial, gender, and generational bias.
+* We will be as diverse as Chicago. 
+* We will welcome everyone, whatever their skill level.
+* We will do outreach to people outside the mainstream IT industry and recruit contributors who are routinely under-valued because of economic, racial, gender, and generational bias.
 * We will prioritize and teach practical web development skills and fundamentals using popular, widely used tools, platforms, and standards.
 * We will use loose consensus in face-to-face meetings to make decisions.
 * We will release our software under free software licenses.
 * We will build open web APIs when our software uses and processes data.
 * We will build web applications that investigate and interrogate Chicago and beyond.
-* We will connect members to professional opportunities, especially stable, well-paid jobs.
-* We will create user friendly software.
+* We will strive to connect contributors to good professional opportunities, especially stable, well-paid contracts and jobs.
+* We will create user-friendly software.
 * We will have a blast.
 
 # Governance
@@ -24,10 +25,10 @@ Come to OpenHack at FreeGeek Chicago, every Saturday from 1pm-5pm at 3411 W. Div
 Decisions such as what projects we'll tackle and licenses we'll use loose consensus in face to face meetings will be handled with loose consensus. Anyone may raise an issue for consideration at a meeting or on the Github issue tracker. Participants may:
 
 * Join in on the proposal.
-* Set aside and let someone else do it.
+* Stand aside and let someone else do it.
 * Object and ask for further consideration. 
 
-If there is an objection, everyone participating must come to an agreement about how to proceed, or the proposal will be shelved.
+If there is an objection, *everyone* participating must come to an agreement about how to proceed or the proposal will be shelved.
 
 # Copyright
 
