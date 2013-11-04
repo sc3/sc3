@@ -22,7 +22,7 @@ Come to OpenHack at FreeGeek Chicago, every Saturday from 1pm-5pm at 3411 W. Div
 
 # Governance
 
-Decisions such as what projects we'll tackle and licenses we'll use loose consensus in face to face meetings will be handled with loose consensus. Anyone may raise an issue for consideration at a meeting or on the Github issue tracker. Participants may:
+Decisions such as what projects we'll tackle and licenses we'll use will be handled with loose consensus in face to face meetings. Anyone may raise an issue for consideration at a meeting or on the Github issue tracker. Participants may:
 
 * Join in on the proposal.
 * Stand aside and let someone else do it.
