@@ -30,5 +30,5 @@ Consistent face-to-face interaction in a safe space is the best way to collabora
 
 "Learning to code" is an overwhelmingly popular subject. We aim to keep our group small while hatching new projects and working with similar groups around the world.
 
-Signed:
-David Eads
+**Signed:**
+[David Eads](http://twitter.com/eads)
