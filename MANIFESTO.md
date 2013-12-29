@@ -28,7 +28,7 @@ Citizens rarely have enough agency over the systems that govern our lives. We us
 
 Consistent face-to-face interaction in a safe space is the best way to collaborate and encourage long term learning. We meet weekly in an accessible location.
 
-"Learning to code" is an overwhelmingly popular subject. We aim to keep our group small while hatching new projects and working with similar groups around the world.
+Learning software development is an overwhelmingly popular subject. We aim to keep our group small while hatching new projects and working with similar groups around the world.
 
 **Signed:**
 [David Eads](http://twitter.com/eads)
