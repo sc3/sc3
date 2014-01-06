@@ -22,7 +22,9 @@ Everyone benefits from transparency. We share our work by publishing our project
 
 Many real world processes have multiple, intertwined data collection and management steps. We research, map out, and describe complex systems.
 
-The demographics of the technology industry does not represent society, which makes it that much harder to create technology that is responsible and humane. We organize for diversity by recruiting outside of the mainstream tech industry and through a gender equal leadership policy. 
+The demographics of the technology industry does not represent society, which makes it that much harder to create technology that is responsible and humane. We organize for diversity by recruiting outside of the mainstream tech industry and through a gender equal leadership policy.
+
+Misconduct and harassment are ever-present threats to a community's integrity. We do not tolerate harassment. We treat each other kindly and fairly by following the [FreeGeek Chicago Code of Conduct](https://github.com/freegeekchicago/fgc-docs/blob/master/code-of-conduct.md).
 
 Self-determination builds community and provides an antidote to atrophied civic and political life. We use participatory, consensus-based governance to practice democracy.
 
