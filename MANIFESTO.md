@@ -1,7 +1,5 @@
 # Supreme Chi-Town Coding Crew Manifesto
 
-_Fork to "sign" or propose improvements!_
-
 We are a small group of aspiring web developers and journalists based in Chicago who meet regularly to learn basic web skills and work on data journalism and civic technology projects.
 
 Fluency with the web and information technology is a critical, marketable job skill. We teach each other practical tech skills that help us advance professionally.
@@ -31,6 +29,3 @@ Self-determination builds community and provides an antidote to atrophied civic 
 Consistent face-to-face interaction in a safe space is the best way to collaborate and encourage long term learning. We meet weekly in an accessible location.
 
 Learning software development is an overwhelmingly popular subject. We aim to keep our group small while hatching new projects and working with similar groups around the world.
-
-**Signed:**
-[David Eads](http://twitter.com/eads)
