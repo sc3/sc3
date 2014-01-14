@@ -18,6 +18,8 @@ Many real world processes have multiple, intertwined data collection and managem
 
 Open data only tells part of the story. We seek to liberate data from obscure sources, legacy systems and using public disclosure requests. We analyze and summarize data to make it more useful. We republish data on the web using standard, open formats.
 
+Open data tells only part of the story. We seek to liberate data from obscure sources and legacy systems with software and public disclosure requests. We analyze and summarize data to make it more useful. We republish data on the web using standard, open formats.
+
 Everyone benefits from transparency. We share our work by publishing our projects with open source licensed code and Creative Commons licensed content. 
 
 The demographics of the technology industry does not represent society, which makes it that much harder to create technology that is responsible and humane. We organize for diversity by recruiting outside of the mainstream tech industry and through a gender-equal leadership policy.
