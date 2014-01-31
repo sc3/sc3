@@ -12,7 +12,7 @@ Asking questions about issues, systems, and institutions that affect our communi
 
 Learning to code is learning to communicate. We emphasize fundamentals like task management, troubleshooting, and version control.
 
-Citizens don't have enough agency over the systems that govern our lives. We use data journalism to learn about and interrogate those systems to gain understanding and create accountability. 
+We don't have enough agency over the systems that govern our lives. We use data journalism to learn about and interrogate those systems to gain understanding and create accountability. 
 
 Many real world processes have multiple, intertwined data collection and management steps. We research, map out, and describe complex systems.
 
