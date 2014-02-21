@@ -1,0 +1,21 @@
+{% extends '_sc3base.html' %}
+
+{% block content %}
+
+<div class="projects">
+    {% for project in projects %}
+    <div class="project">
+        <h3><a href="{{ project.url or project.source_code }}">{{ project.name }}</a></h3>
+        <div>
+            {{ project.about|markdown }}
+        </div>
+        <p class="project-languages">Languages: {{ project.languages }}</p>
+        <p><a href="{{ project.source_code }}">Source, </a> {{ project.status }}, Version: {{ project.version }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock content %}
+
