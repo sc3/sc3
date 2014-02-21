@@ -53,9 +53,18 @@
 {% endblock nav %}
 
 <div class="container">
-  {% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {% block content %}
 
-  {% endblock content %}
+      {% endblock content %}
+    </div>
+    <div class="col-sm-4">
+      {% block sidebar %}
+
+      {% endblock sidebar %}
+    </div>
+  </div>
 </div>
 
 {% block footer %}
