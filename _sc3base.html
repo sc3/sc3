@@ -23,7 +23,12 @@
 
 
 {% block sidebar %}
-
-{% include 'join_us.html' %}
-
+<div class="sidebar">
+    <div class="sidebar-item">
+        {% include 'join_us.html' %}
+    </div>
+    <div class="sidebar-item">
+        {% include 'showcase.html' %}
+    </div>
+</div>
 {% endblock sidebar %}
