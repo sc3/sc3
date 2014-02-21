@@ -1,0 +1,70 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    {# Brand and toggle get grouped for better mobile display #}
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">{{ title }}</a>
+    </div>
+
+    {# Collect the nav links, forms, and other content for toggling #}
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Example link 1</a></li>
+        <li><a href="#">Example link 2</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Example dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Example form">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <ul class="social-menu nav navbar-nav navbar-right">
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="https://www.facebook.com/sharer.php?u={{ ROOT_URL }}/{{ PATH }}&t={{ title|urlencode }}">
+                  <i class="icon-white icon-facebook-sign"></i> <span class="hidden">Facebook</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if twitter_description %}
+          <li>
+              <a target="_blank" href="https://twitter.com/share?url={{ ROOT_URL }}/{{ PATH }}&text={{ twitter_description|urlencode }}">
+                  <i class="icon-white icon-twitter-sign"></i> <span class="hidden">Twitter</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="https://plus.google.com/share?url={{ ROOT_URL }}/{{ PATH }}">
+                  <i class="icon-white icon-google-plus-sign"></i> <span class="hidden">Google+</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="http://pinterest.com/pin/create/button/?url={{ ROOT_URL }}/{{ PATH }}&media={{ opengraph_image }}&description={{ opengraph_description|urlencode }}" class="pin-it-button" count-layout="horizontal">
+                  <i class="icon-white icon-pinterest-sign"></i> <span class="hidden">Pinterest</span>
+              </a>
+          </li>
+          {% endif %}
+      </ul>
+
+    </div>{# /.navbar-collapse #}
+  </div>
+</nav>

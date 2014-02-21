@@ -1,0 +1,89 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Welcome to your new Tarbell project</h1>
+
+  <p><em>Override this sample content and starting building by editing or replacing <code>{{ PROJECT_PATH }}/{{ PATH }}</code>.</em> 
+
+  <p>To change this project's S3 configuration or default context, edit <code>{{ PROJECT_PATH }}/tarbell_config.py</code>.</p>
+
+  <h3>Template basics</h3>
+
+  <p>Tarbell uses <a href="http://jinja.pocoo.org/">Jinja2</a> for templating. Read the <a href="http://jinja.pocoo.org/docs/">excellent documentation</a> to learn more about using Jinja.
+
+  <p>This base template uses the <a href="http://getbootstrap.com/">Twitter Bootstrap</a> CSS framework.</p>
+
+  <h3>Overriding the base template</h3>
+
+  <p>All files in the <code>_base</code> directory are available from the root path of the preview server and published project. So <code>_base/css/base.css</code> can be previewed <code>http://localhost:5000/css/base.css</code>. However, if you create a file with the same name and path relative to your project directory, this file will be served up instead.</p>
+
+  <p>This base template comes with basic template snippets that are intended to be overridden. To add a custom header or footer for your project, simply copy <code>_base/_nav.html</code> or <code>_base/_footer.html</code> into your project directory and edit it, or create your own.</p>
+
+  <h3>Hiding files from publication</h3>
+
+  <p>Files and directories prefixed with an underscore (<code>_</code>) as well as any file pattern specified in <code>tarbell_config.py</code> will not be published. These files can still be previewed locally.</p>
+
+  <h3>Working with context variables</h3>
+
+  {% if SPREADSHEET_KEY %}
+  <p>This project uses Google spreadsheets to manage context variables. The spreadsheet <a href="https://docs.google.com/spreadsheet/ccc?key={{ SPREADSHEET_KEY }}#gid=0" target="_BLANK">can be edited here</a>.</p>
+  {% else %}
+  <p>This project does not use Google spreadsheets to manage context variables. They must be set in the <code>DEFAULT_CONTEXT</code> section of <code>{{ PROJECT_PATH }}/tarbell_config.py</code>.</p>
+  {% endif %}
+
+  <p>In the <em>values</em> worksheet, there are columns named <code>key</code> and <code>value</code>. Every value is available to the template by referencing the key. Here's an example:</p>
+
+  <p>The key is <code>headline</code> and the value <strong>{{ headline }}</strong>.</p>
+  <p>Print this headline in your code with something like <code>{{ "<strong>{{ headline }}</strong>" }}</code>.
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Access data with a loop:</h3>
+    <p><em>Use the worksheet name to access data.</em></p>
+
+<pre>
+{{ "{% for row in data %}" }}
+{{ "<p>" }}
+{{ "  <strong>{{ row.column1 }}</strong>:" }}
+{{ "  {{ row.column2 }}" }}
+{{ "</p>" }}
+{{ "{% endfor %}" }}
+</pre>
+
+    <p>Output:</p>
+
+    {% for row in data %}
+    <p>
+      <strong>{{ row.column1 }}:</strong>
+      {{ row.column2 }}
+    </p>
+    {% endfor %}
+  </div>
+  <div class="col-md-6">
+    <h3>Access data by key</h3>
+    <p><em>Requires a column named <code>key</code>.</em></p>
+
+<pre>
+{{ "<p>" }}
+{{ "  <strong>key1, column 1</strong>:" }} 
+{{ "  {{ keyed_data.key1.column1 }}" }}
+{{ "</p>" }}
+{{ "<p>" }}
+{{ "  <strong>key2, column 2</strong>:" }} 
+{{ "  {{ keyed_data.key2.column2 }}" }}
+{{ "</p>" }}
+</pre>
+
+    <p>Output:</p>
+    <p>
+      <strong>key1, column 1</strong>:
+      {{ keyed_data.key1.column1 }}
+    </p>
+    <p>
+      <strong>key2, column 2</strong>:
+      {{ keyed_data.key2.column2 }}</p>
+  </div>
+</div>
+{% endblock content %}
+

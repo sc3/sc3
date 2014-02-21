@@ -1,0 +1,28 @@
+{% extends "_sc3base.html" %}
+
+{% block content %}
+
+<div class="members">
+    {% for member in members %}
+    <div class="member">
+        <hgroup>
+            <h3 class="member-name">
+                <a href="http://github.com/{{ member.github }}">{{ member.nickname or member.first + ' ' + member.last }}</a>
+
+            </h3>
+        </hgroup>
+
+        {% if member.photo_url or member.email %}
+        <img class="member-photo" 
+            src="{{ member.photo_url or member.email|gravatar(200) }}"></img>
+        {% endif %}
+
+        <div class="member-about">
+            {{ member.about|markdown }}
+        </div>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
