@@ -10,12 +10,15 @@
             {{ project.about|markdown }}
         </div>
         <p class="project-languages">Languages: {{ project.languages }}</p>
-        <p><a href="{{ project.source_code }}">Source, </a> {{ project.status }}, Version: {{ project.version }}</p>
+        <p>
+          <a href="{{ project.source_code }}">
+            Source
+          </a> {{ project.status }}
+        </p>
+        <p>Version: {{ project.version }}</p>
     </div>
     {% endfor %}
 </div>
-
-
 
 {% endblock content %}
 
