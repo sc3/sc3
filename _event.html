@@ -1,0 +1,22 @@
+{% extends '_sc3base.html' %}
+
+{% block content %}
+
+{% for e in events %}
+    {% if e.id == page %}
+
+    <h1>{{ e.name }}</h1>
+    <p>{{ e.description }}</p>
+
+    {{ e.more_details|markdown }}
+
+    {% endif %}
+    
+    {% block extra %} {% endblock %}
+
+{% endfor %}
+
+
+{% endblock %}
+
+

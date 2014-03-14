@@ -1,0 +1,18 @@
+{% extends '_sc3base.html' %}
+
+{% block content %}
+<div class="listing events">
+
+    {% for event in events %}
+    <div class="listing-item event">
+        <h3><a href="{{ '/event/' + event.event_url }}">{{ event.name }}</a></h3>
+        <p>{{ event.description | markdown }}</p>
+        <time class="date">{{ event.year | s }}-{{ event.month | s }}-{{ event.day | s }}</time>
+        <img class="img-responsive" src="{{ img_url('sfd', 'featured.jpeg') }}">
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+
+
