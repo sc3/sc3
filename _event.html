@@ -1,5 +1,20 @@
 {% extends '_sc3base.html' %}
 
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="/assets/css/fotorama.css" />
+{% endblock %}
+
+
+{% block scripts %}
+{{ super() }}
+<script src="/assets/js/fotorama.js"></script>
+{% endblock %}
+
+{% block loose %}
+<div class="fotorama gallery" data-autoplay="true">{% block gallery %} {% endblock %}</div>
+{% endblock %}
+
 {% block content %}
 
 {% for e in events %}
