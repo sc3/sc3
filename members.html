@@ -13,7 +13,7 @@
         </hgroup>
 
         {% if member.photo_url or member.email %}
-        <img class="member-photo" 
+        <img class="img-responsive member-photo" 
             src="{{ member.photo_url or member.email|gravatar(200) }}"></img>
         {% endif %}
 
