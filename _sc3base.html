@@ -2,6 +2,13 @@
 
 {% from '_macros.html' import img_url %}
 
+{% block css %}
+{{ super() }}
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+{% endblock %}
+
 {% block preview %}{% endblock preview %}
 
 {% block nav %}
