@@ -176,10 +176,25 @@ def markdown(value):
     """Run text through markdown process"""
     return Markup(Markdown.markdown(value))
 
+
 @blueprint.app_template_filter()
 def gravatar(email, size=40):
+    """
+    Returns the url for a user's account.
 
+    """
     return ("%s%s?%s" % ("http://www.gravatar.com/avatar/", 
                                 hashlib.md5(email.lower()).hexdigest(), 
                                 urllib.urlencode({'d':'https://identicons.github.com/7d79c70e984bb2101350419a1190466d.png', 
-                                    's':str(size)})))
+                                's':str(size)})))
+
+
+@blueprint.app_template_filter()
+def s(n):
+    """
+    Make sure a number is returned as a string.
+    Used because some values get turned into floats by default.
+
+    """
+    return str(int(n))
+
