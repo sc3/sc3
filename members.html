@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="members">
+<div class="listing members">
     {% for member in members %}
-    <div class="member">
+    <div class="listing-item member">
         <hgroup>
             <h3 class="member-name">
                 <a href="http://github.com/{{ member.github }}">{{ member.nickname or member.first + ' ' + member.last }}</a>
