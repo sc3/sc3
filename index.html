@@ -1,0 +1,18 @@
+{% extends "_sc3base.html" %}
+
+{% block content %}
+
+
+<h1>{{ title }}</h1>
+<div class="">
+
+    {{ about|markdown }}
+
+    {{ manifesto|markdown }}
+
+    {{ licensing|markdown }}
+    
+</div>
+
+{% endblock content %}
+

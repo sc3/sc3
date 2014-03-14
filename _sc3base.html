@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+
+{% block preview %}{% endblock preview %}
+
+{% block nav %}
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">{{ title }}</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/members.html">Members</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+{% endblock nav %}
+
+
+{% block sidebar %}
+<div class="sidebar">
+    <div class="sidebar-item">
+        {% include 'join_us.html' %}
+    </div>
+    <div class="sidebar-item">
+        {% include 'showcase.html' %}
+    </div>
+</div>
+{% endblock sidebar %}

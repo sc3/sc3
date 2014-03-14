@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{{ title|striptags }}{% endblock title %}</title>
+  <link rel="shortcut icon" href="/favicon{% if preview_mode %}-preview{% endif %}.ico" />
+
+  {% block css %}
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="base.css" />
+  {% endblock css %}
+
+  {% block opengraph %} 
+  <meta property="og:url" content="{{ ROOT_URL }}/{{ PATH }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ opengraph_image }}" />
+  <meta property="og:description" content="{{ opengraph_description }}" />
+  {% endblock opengraph %}
+
+  {% block shim %}
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  {% endblock %}
+
+  {% block meta %}
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% endblock meta %}
+
+  {% block google_analytics %}
+  {% if google_analytics_id %}
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-{{ google_analytics_id }}']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  {% endif %}
+  {% endblock google_analytics %}
+</head>
+<body{% block bodyattrs %} class="page-{{ PATH[:-5] }}"{% endblock bodyattrs %}>
+
+{% block nav %}
+  {% include "_nav.html" %}
+{% endblock nav %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+    <div class="col-sm-4">
+      {% block sidebar %}
+
+      {% endblock sidebar %}
+    </div>
+  </div>
+</div>
+
+{% block footer %}
+  {% include "_footer.html" %}
+{% endblock footer %}
+
+{% block scripts %}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+{% endblock scripts %}
+
+</body>
+</html>
