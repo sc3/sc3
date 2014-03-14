@@ -7,7 +7,7 @@
   {% block css %}
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="base.css" />
+  <link rel="stylesheet" type="text/css" href="/base.css" />
   {% endblock css %}
 
   {% block opengraph %} 
@@ -52,7 +52,16 @@
   {% include "_nav.html" %}
 {% endblock nav %}
 
+{% block loose %}
+
+{% endblock %}
+
 <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      {% block full_top %} {% endblock %}
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-8">
       {% block content %}

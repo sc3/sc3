@@ -1,5 +1,14 @@
 {% extends "_base.html" %}
 
+{% from '_macros.html' import img_url %}
+
+{% block css %}
+{{ super() }}
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+{% endblock %}
+
 {% block preview %}{% endblock preview %}
 
 {% block nav %}
@@ -12,6 +21,7 @@
         <ul class="nav navbar-nav">
             <li><a href="/projects.html">Projects</a></li>
             <li><a href="/members.html">Members</a></li>
+            <li><a href="/events.html">Events</a></li>
         </ul>
     </div>
 </nav>

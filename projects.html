@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="projects">
+<div class="listing projects">
     {% for project in projects %}
-    <div class="project">
+    <div class="listing-item project">
         <h3><a href="{{ project.url or project.source_code }}">{{ project.name }}</a></h3>
         <div>
             {{ project.about|markdown }}
