@@ -16,11 +16,11 @@ SPREADSHEET_KEY = "0ArYYFwYApHDkdEZrMHBGVGlHZkdMblhKSFpvaG9lREE"
 # Create JSON data at ./data.json, disabled by default
 # CREATE_JSON = True
 
-# S3 bucket configuration
-#S3_BUCKETS = {
+#S3 bucket configuration
+S3_BUCKETS = {
     # Provide target -> s3 url pairs, such as:
-    # "mytarget": "s3://mys3url.bucket.url/some/path"
-#}
+    "sc3": "s3://chitowncoders.org"
+}
 
 # Repository this project is based on (used for updates)
 TEMPLATE_REPO_URL = "https://github.com/wilbertom/tarbell-template"
