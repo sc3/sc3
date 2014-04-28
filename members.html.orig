@@ -1,0 +1,73 @@
+{% extends "_sc3base.html" %}
+
+{% block content %}
+
+<div class="listing members">
+    {% for member in members %}
+    <div class="listing-item member">
+      <div class="row">
+        <div class="col-sm-4">
+          {% if member.photo_url or member.email %}
+          <div class="photo-container">
+            <img class="img-responsive member-photo" 
+              src="{{ member.photo_url or member.email|gravatar(200) }}"></img>
+          </div>
+          {% endif %}
+        </div>
+      
+        <div class="col-sm-8">
+          <hgroup>
+              <h3 class="member-name">
+                {{ member.nickname or member.first + ' ' + member.last }}
+              </h3>
+          </hgroup>
+
+<<<<<<< HEAD
+          <div class="member-about">
+              {{ member.about|markdown }}
+          </div>
+          
+          <div class="social-box">
+            <ul>
+              <li>
+                <a target="_blank" href="https://github.com/{{ member.github }}">
+                    <i class="icon-github icon-2x"></i> <span class="hidden">Github</span>
+                </a>
+              </li>
+              {% if member.email %}
+              <li>
+                <a target="_blank" href="mailto:{{ member.email }}?Subject=Hello">
+                    <i class="icon-envelope-alt icon-2x"></i> <span class="hidden">Email</span>
+                </a>
+              </li>
+              {% endif %}
+              {% if member.twitter %}
+              <li>
+                <a target="_blank" href="https://twitter.com/{{ member.twitter }}">
+                    <i class="icon-twitter icon-2x"></i> <span class="hidden">Twitter</span>
+                </a>
+              </li>
+              {% endif %}
+              {% if member.linkedin %}
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/">
+                    <i class="icon-linkedin icon-2x"></i> <span class="hidden">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+            </ul>
+          </div>
+          
+=======
+        <div class="member-about">
+            {{ member.role|markdown }}
+            {# {{ member.about|markdown }} #}
+>>>>>>> 0b52ebbe9c9b9b65386b5db1a8cc7e6b4769fb9e
+        </div>
+      </div>
+      <hr>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
