@@ -1,8 +1,75 @@
-/**
- *
- */
+/* Sidebar */
+
+.sidebar, .sidebar-index {
+  background-color: rgba(0, 0, 240, 0.2);
+}
+
+.sidebar-item {
+  padding: 20px;
+}
+
+.sidebar h4 {
+  margin-top: 0;
+}
+
+.sidebar-index.affix {
+  top: 70px;
+  position: fixed;
+}
+
+/* Content */
 
 .video-embed {
-    height: 500px;
-    width: 100%;
+  height: 500px;
+  width: 100%;
+}
+
+body {
+  margin-top: 2em;
+}
+
+/* Members */
+
+.members .row .col-sm-8 {
+  height: 12em;
+  position: relative;
+}
+
+.social-box {
+  position: absolute;
+  bottom: 0;
+}
+
+.social-box ul {
+  padding-left: 10px;
+}
+
+.social-box li {
+  width: 50px;
+  list-style-type: none;
+  display: inline-block;
+  float: none;
+}
+
+.social-box a:hover {
+  text-decoration: none;
+}
+
+.photo-container {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.photo-container img {
+  width: 100%;
+}
+
+/* Responsivity */
+
+@media (max-width: 768px) {
+  .affix {
+    display: none;
+  }
 }

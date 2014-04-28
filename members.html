@@ -5,22 +5,61 @@
 <div class="listing members">
     {% for member in members %}
     <div class="listing-item member">
-        <hgroup>
-            <h3 class="member-name">
-                <a href="http://github.com/{{ member.github }}">{{ member.nickname or member.first + ' ' + member.last }}</a>
-
-            </h3>
-        </hgroup>
-
-        {% if member.photo_url or member.email %}
-        <img class="img-responsive member-photo" 
-            src="{{ member.photo_url or member.email|gravatar(200) }}"></img>
-        {% endif %}
-
-        <div class="member-about">
-            {{ member.about|markdown }}
+      <div class="row">
+        <div class="col-sm-4">
+          {% if member.photo_url or member.email %}
+          <div class="photo-container">
+            <img class="img-responsive member-photo" 
+              src="{{ member.photo_url or member.email|gravatar(200) }}"></img>
+          </div>
+          {% endif %}
         </div>
-        <hr>
+      
+        <div class="col-sm-8">
+          <hgroup>
+              <h3 class="member-name">
+                {{ member.nickname or member.first + ' ' + member.last }}
+              </h3>
+          </hgroup>
+
+          <div class="member-about">
+              {{ member.about|markdown }}
+          </div>
+          
+          <div class="social-box">
+            <ul>
+              <li>
+                <a target="_blank" href="https://github.com/{{ member.github }}">
+                    <i class="icon-github icon-2x"></i> <span class="hidden">Github</span>
+                </a>
+              </li>
+              {% if member.email %}
+              <li>
+                <a target="_blank" href="mailto:{{ member.email }}?Subject=Hello">
+                    <i class="icon-envelope-alt icon-2x"></i> <span class="hidden">Email</span>
+                </a>
+              </li>
+              {% endif %}
+              {% if member.twitter %}
+              <li>
+                <a target="_blank" href="https://twitter.com/{{ member.twitter }}">
+                    <i class="icon-twitter icon-2x"></i> <span class="hidden">Twitter</span>
+                </a>
+              </li>
+              {% endif %}
+              {% if member.linkedin %}
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/">
+                    <i class="icon-linkedin icon-2x"></i> <span class="hidden">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
     </div>
     {% endfor %}
 </div>

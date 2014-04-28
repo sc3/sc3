@@ -2,7 +2,9 @@
 
 {% block loose %}
 
-<img class="img-responsive" src="{{ img_url('sfd', 'jg_soft_freedom_088.jpg') }}" />
+<div class='featured-image responsive' style="margin-top: -2em;">
+  <img class="img-responsive" src="{{ img_url('sfd', 'jg_soft_freedom_088.jpg') }}" />
+</div>
 
 {% endblock %}
 
@@ -12,12 +14,20 @@
 <div class="">
 
     {{ about|markdown }}
-
+    
     {{ manifesto|markdown }}
 
     {{ licensing|markdown }}
-    
+  
 </div>
 
 {% endblock content %}
 
+{% block sidebar %}
+<div class="sidebar-index" data-spy="affix" data-offset-top="600">
+    <div class="sidebar-item">
+        {% include 'join_us.html' %}
+        {% include 'showcase.html' %}
+    </div>
+</div>
+{% endblock sidebar %}
