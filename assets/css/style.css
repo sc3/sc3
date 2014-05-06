@@ -1,3 +1,13 @@
+/* Navbar */
+
+.navbar-header {
+  font-family: "Contrail One", sans-serif;
+}
+
+.nav {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* Sidebar */
 
 .sidebar, .sidebar-index {
@@ -19,6 +29,23 @@
 
 /* Content */
 
+.featured-image {
+  position: relative;
+  z-index: 1000;
+}
+
+.featured-image h1 {
+  position: absolute;
+  width: 100%;
+  left: 15%;
+  bottom: 12%;
+  text-align: center;
+  font-family: "Contrail One", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 3px #000000;
+  font-size: 4em;
+}
+
 .video-embed {
   height: 500px;
   width: 100%;
@@ -26,6 +53,11 @@
 
 body {
   margin-top: 2em;
+}
+
+body p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 /* Members */
@@ -69,6 +101,9 @@ body {
 /* Responsivity */
 
 @media (max-width: 768px) {
+  .featured-image {
+    background-position-x: 30% !important;
+  }
   .affix {
     display: none;
   }
