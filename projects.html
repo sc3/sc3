@@ -1,24 +1,36 @@
 {% extends '_sc3base.html' %}
 
-{% block content %}
+{% block loose %}
 
-<div class="listing projects">
-    {% for project in projects %}
-    <div class="listing-item project">
-        <h3><a href="{{ project.url or project.source_code }}">{{ project.name }}</a></h3>
-        <div>
-            {{ project.about|markdown }}
-        </div>
-        <p class="project-languages">Languages: {{ project.languages }}</p>
-        <p>
-          <a href="{{ project.source_code }}">
-            Source
-          </a> {{ project.status }}
-        </p>
-        <p>Version: {{ project.version }}</p>
+<div class='container'>
+  <div class='projects-container'>
+      <ul id="tiles">
+          {% for project in projects %}
+          <li>
+            <img class='project-img' src="{{ project.image }}">
+            <div class='projects'>
+              <h3><a href="{{ project.url or project.source_code }}">{{ project.name }}</a></h3>
+                <div>
+                    {{ project.about|markdown }}
+                </div>
+                <p class="project-languages">Languages: {{ project.languages }}</p>
+                <p>
+                  <a href="{{ project.source_code }}">
+                    Source
+                  </a> {{ project.status }}
+                </p>
+                <p>Version: {{ project.version }}</p>
+            </div>
+            </img>
+          </li>
+          {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+  </div>
 </div>
 
-{% endblock content %}
+{% endblock %}
 
+{% block sidebar %}
+
+{% endblock sidebar %}

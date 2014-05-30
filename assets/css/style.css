@@ -60,6 +60,22 @@ body p {
   font-weight: 400;
 }
 
+/* Projects */
+
+#tiles {
+  list-style-type: none;
+  position: relative;
+}
+
+.projects {
+  width: 300px;
+}
+
+.project-img {
+  height: auto;
+  width: 250px;
+}
+
 /* Members */
 
 .members .row .col-sm-8 {
