@@ -16,8 +16,6 @@ We don't have enough agency over the systems that govern our lives. We use data 
 
 Many real world processes have multiple, intertwined data collection and management steps. We research, map out, and describe complex systems.
 
-Open data only tells part of the story. We seek to liberate data from obscure sources, legacy systems and using public disclosure requests. We analyze and summarize data to make it more useful. We republish data on the web using standard, open formats.
-
 Open data tells only part of the story. We seek to liberate data from obscure sources and legacy systems with software and public disclosure requests. We analyze and summarize data to make it more useful. We republish data on the web using standard, open formats.
 
 Everyone benefits from transparency. We share our work by publishing our projects with open source licensed code and Creative Commons licensed content. 
