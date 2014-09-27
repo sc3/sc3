@@ -12,6 +12,7 @@
 
 .sidebar, .sidebar-index {
   background-color: rgba(0, 0, 240, 0.2);
+  margin-top: 20px;
 }
 
 .sidebar-item {
@@ -25,6 +26,7 @@
 .sidebar-index.affix {
   top: 70px;
   position: fixed;
+  margin-right: 50px;
 }
 
 /* Content */
