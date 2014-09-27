@@ -39,13 +39,13 @@
 .featured-image h1 {
   position: absolute;
   width: 100%;
-  left: 15%;
   bottom: 12%;
-  text-align: center;
+  text-align: right;
   font-family: "Contrail One", sans-serif;
   color: white;
   text-shadow: 2px 2px 3px #000000;
   font-size: 4em;
+  right: 2em;
 }
 
 .video-embed {
@@ -54,7 +54,6 @@
 }
 
 body {
-  overflow-x: hidden;
   margin-top: 2em;
 }
 
